@@ -1,4 +1,5 @@
-Advanced Data Shredder
+**Advanced Data Shredder**
+
 An advanced Python-based data shredding tool that securely shreds sensitive documents. Using machine learning, this tool can classify documents by sensitivity level and automatically shred files marked as high-risk. Ideal for organizations and individuals looking to enhance their data security practices.
 
 Features
@@ -26,14 +27,10 @@ secure-delete or shred (for secure file deletion)
 Installation
 Clone the repository:
 
-bash
-Copy code
-git clone https://github.com/username/advanced-data-shredder.git
+git clone https://github.com/idris-j/data-shredder-with-machine-learning.git
 cd advanced-data-shredder
 Install required dependencies:
 
-bash
-Copy code
 pip install -r requirements.txt
 Set up the machine learning model:
 
@@ -44,18 +41,17 @@ Train or Load the Classifier Model
 
 To use the default classification, you can load a pre-trained model provided in the repo, or you can train your own:
 
-python
-Copy code
+
 python train_model.py --data path/to/dataset.csv
 Run the Shredder
 
 Start the shredder with the following command:
 
-bash
-Copy code
+
 python shredder.py --directory /path/to/documents --sensitivity high
 --directory specifies the folder containing documents to scan.
 --sensitivity sets the threshold for classification (e.g., "high" for shredding highly sensitive documents only).
+
 Customize Settings
 
 You can customize sensitivity settings in config.yaml. This includes:
@@ -82,9 +78,9 @@ Create a labeled dataset with examples of "sensitive" and "non-sensitive" docume
 Train the Model
 Use the train_model.py script to train a new model:
 
-bash
-Copy code
+
 python train_model.py --data path/to/dataset.csv
+
 Evaluate the Model
 Check accuracy and fine-tune the model to improve classification results.
 
